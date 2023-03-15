@@ -14,7 +14,7 @@ This is a PHP-based RESTful API that manages tasks using Domain Driven Design (D
 Clone the repository:
 
 ```bash
-git clone https://github.com/<username>/task-api.git
+git clone https://github.com/BaseMax/PHPTaskDDD.git
 ```
 
 Install dependencies using Composer:
@@ -45,19 +45,19 @@ Use your preferred HTTP client to make requests to the API endpoints.
 
 The API has the following endpoints:
 
-- GET /tasks
+- `GET /tasks`
 Returns a list of all tasks.
 
-- GET /tasks/{id}
+- `GET /tasks/{id}`
 Returns a single task by ID.
 
-- POST /tasks
+- `POST /tasks`
 Creates a new task.
 
-- PUT /tasks/{id}
+- `PUT /tasks/{id}`
 Updates an existing task by ID.
 
-- DELETE /tasks/{id}
+- `DELETE /tasks/{id}`
 Deletes a task by ID.
 
 ## Contributing
@@ -72,4 +72,4 @@ Contributions are welcome! To contribute, please follow these steps:
 
 ## License
 
-This project is licensed under the GPL license.
+This project is licensed under the GPL-3.0 license.

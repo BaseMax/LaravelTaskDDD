@@ -20,7 +20,7 @@ git clone https://github.com/BaseMax/PHPTaskDDD.git
 Install dependencies using Composer:
 
 ```bash
-cd task-api
+cd PHPTaskDDD
 composer install
 ```
 

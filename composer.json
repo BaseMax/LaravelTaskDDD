@@ -1,0 +1,38 @@
+{
+    "name": "basemax/phptaskddd",
+    "description": "Task API project using DDD architecture in PHP 8",
+    "type": "project",
+    "require": {
+        "php": "^8.0",
+        "ext-json": "*",
+        "doctrine/orm": "^2.10",
+        "symfony/dotenv": "^5.3",
+        "symfony/console": "^5.3",
+        "symfony/serializer": "^5.3",
+        "symfony/http-foundation": "^5.3",
+        "symfony/http-kernel": "^5.3",
+        "symfony/routing": "^5.3",
+        "vlucas/phpdotenv": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "post-install-cmd": [
+            "php artisan key:generate"
+        ]
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        }
+    }
+}

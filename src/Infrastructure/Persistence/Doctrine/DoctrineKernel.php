@@ -30,27 +30,27 @@ class DoctrineKernel extends Kernel
 
     public function registerContainerConfiguration(ContainerBuilder $container, $loader)
     {
-        $loader->load(__DIR__.'/../../config/packages/*.xml');
+        $loader->load(__DIR__ . '/../../config/packages/*.xml');
 
-        $fileLocator = new FileLocator(__DIR__.'/../../config/');
+        $fileLocator = new FileLocator(__DIR__ . '/../../config/');
         $loader = new XmlFileLoader($container, $fileLocator);
         $loader->load('services.xml');
     }
 
     protected function configureRoutes(RouteCollection $routes)
     {
-        $fileLocator = new FileLocator(__DIR__.'/../../config/');
+        $fileLocator = new FileLocator(__DIR__ . '/../../config/');
         $loader = new RoutingXmlFileLoader($routes, $fileLocator);
         $loader->load('routes.xml');
     }
 
     public function getCacheDir()
     {
-        return $this->getProjectDir().'/var/cache/'.$this->getEnvironment();
+        return $this->getProjectDir() . '/var/cache/' . $this->getEnvironment();
     }
 
     public function getLogDir()
     {
-        return $this->getProjectDir().'/var/log/'.$this->getEnvironment();
+        return $this->getProjectDir() . '/var/log/' . $this->getEnvironment();
     }
 }

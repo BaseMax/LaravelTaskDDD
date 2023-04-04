@@ -1,4 +1,4 @@
-# PHP Task API DDD
+# Laravel Task API DDD
 
 This is a PHP & Laravel-based RESTful API that manages tasks using Domain Driven Design (DDD) architecture. The API allows users to create, read, update, and delete tasks.
 

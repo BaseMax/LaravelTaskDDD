@@ -30,7 +30,7 @@ Configure the database connection in config/db.php.
 Run the database migration:
 
 ```bash
-vendor/bin/doctrine-migrations migrate
+php artisan migrate
 ```
 
 ## Usage
@@ -38,7 +38,7 @@ vendor/bin/doctrine-migrations migrate
 Start the built-in PHP server:
 
 ```bash
-php -S localhost:8000 -t public
+php artisan serve
 ```
 
 Use your preferred HTTP client to make requests to the API endpoints.

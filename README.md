@@ -25,7 +25,13 @@ cd PHPTaskDDD
 composer install
 ```
 
-Configure the database connection in config/db.php.
+Create .env file:
+
+```bash
+cp .env.example .env
+```
+
+Configure the database connection in .env file.
 
 Run the database migration:
 
@@ -35,7 +41,7 @@ php artisan migrate
 
 ## Usage
 
-Start the built-in PHP server:
+Start the artisan(a command-line tool) server:
 
 ```bash
 php artisan serve

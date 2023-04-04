@@ -15,13 +15,13 @@ This is a PHP & Laravel-based RESTful API that manages tasks using Domain Driven
 Clone the repository:
 
 ```bash
-git clone https://github.com/BaseMax/PHPTaskDDD.git
+git clone https://github.com/BaseMax/LaravelTaskDDD.git
 ```
 
 Install dependencies using Composer:
 
 ```bash
-cd PHPTaskDDD
+cd LaravelTaskDDD
 composer install
 ```
 

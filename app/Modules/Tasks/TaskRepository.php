@@ -2,6 +2,28 @@
 
 namespace App\Modules\Tasks;
 
-class TaskRepository
+use App\Modules\Tasks\TaskDTO;
+use App\Modules\Tasks\Task;
+
+class TaskRepository implements TaskRepositoryInterface
 {
+    public function getAllTasks()
+    {
+    }
+
+    public function getTaskById(string $id)
+    {
+    }
+
+    public function createTask(TaskDTO $taskDTO)
+    {
+    }
+
+    public function saveTask(Task $task)
+    {
+    }
+
+    public function deleteTask(Task $task)
+    {
+    }
 }
